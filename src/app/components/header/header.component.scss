@@ -1,0 +1,33 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100%;
+    padding-left:3%;
+    padding-top:1%;
+}
+ul{
+    list-style: none;
+}
+#menu li{
+    display: inline;
+    padding-left: 3%;
+    padding-right:3%;
+}
+
+button{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top:1%;
+    padding-bottom: 1%;
+    border:1px solid #969a9d;
+    background-color:#e0cee0;
+}
+
+button:hover{
+    background-color:#008270;
+    border: 1px solid #7ad3c1;
+    color:#e0cee0;
+}
+.link {
+    text-decoration: none;
+    color:#006b5b;
+}
