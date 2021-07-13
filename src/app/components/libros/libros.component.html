@@ -1,1 +1,14 @@
-<p>libros works!</p>
+<ul id=libros>
+    <li *ngFor="let item of Lista" class="cuadricula">
+        <div class="nombre">
+            <p>{{item.nombre}}</p>
+        </div>
+        <img src="{{item.imagen}}" class="img">
+        <div class="autor">
+            <p>Autor: {{item.autor}}</p>
+        </div>
+        <div class="paginas">
+            <p>Páginas: {{item.paginas}}</p>
+        </div>
+    </li>
+</ul>
