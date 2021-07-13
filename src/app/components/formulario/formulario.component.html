@@ -1,1 +1,43 @@
-<p>formulario works!</p>
+
+<div class="contenedor">
+    <form class="formulario" [formGroup]="formulario" (ngSubmit)="Crear()">
+        <ul>
+            <li>
+                <label id="estiloNombre">Nombre Completo: </label>
+                <input formControlName="nombre" type="text"  >
+            </li>
+            <br>
+            <li>
+                <label id="estiloPais" for="pais">Pais</label>
+                <select formControlName="pais">
+                    <option>--Seleccione país</option>
+                <option>Argentina</option>
+                <option>Bolivia</option>
+                <option>Brasil</option>
+                <option>Chile</option>
+                <option>Colombia</option>
+                <option>Ecuador</option>
+                <option>Guayana</option>
+                <option>Paraguay</option>
+                <option>Perú</option>
+                <option>Uruguay</option>
+                <option>Venezuela</option>
+                </select>
+                
+            </li>
+            <br>
+            <li>
+                <label id="estiloObservacion">Observación</label>
+                <textarea formControlName="observacion"></textarea>
+            </li>
+            <br>
+            <li>
+                <div id="boton">
+                    <a [routerLink]="['/respuesta']" routerLinkActive="router-link-active" >
+                        <button type="submit" [disabled]="formulario.invalid">Enviar</button>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </form>
+</div>

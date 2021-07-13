@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LibrosComponent } from './components/libros/libros.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import { RespuestaComponent } from './components/respuesta/respuesta.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     FooterComponent,
     HomeComponent,
     LibrosComponent,
-    FormularioComponent
+    FormularioComponent,
+    RespuestaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
